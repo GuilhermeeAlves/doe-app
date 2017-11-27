@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Doe</string>
+    <string name="entrar">Entrar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="logo">Logo Doe</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="tipo">Tipo</string>
+    <string name="descri_o">Descrição</string>
+    <string name="qualidade">Qualidade</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="novo_item">Novo item</string>
+    <string name="organiza_o">Organização</string>
+    <string name="comum">Comum</string>
+    <string name="tipo_de_usu_rio">Tipo de Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="endere_o">Endereço</string>
+    <string name="fone">Fone</string>
+    <string name="cpf">CPF</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="voltar_ao_login">Voltar ao Login</string>
+    <string name="configura_es">Configurações</string>
+    <string name="logout">Logout</string>
+    <string name="institui_es">Instituições</string>
+    <string name="listas">Listas</string>
+    <string name="username">Username</string>
+    <string name="drawer_open">Abrir navegação</string>
+    <string name="drawer_close">Fechar navegação</string>
 </resources>

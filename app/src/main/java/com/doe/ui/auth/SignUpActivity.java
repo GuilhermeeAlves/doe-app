@@ -1,13 +1,15 @@
-package com.doe;
+package com.doe.ui.auth;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DonationEditActivity extends AppCompatActivity {
+import com.doe.R;
+
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donation_edit);
+        setContentView(R.layout.activity_sign_up);
     }
 }

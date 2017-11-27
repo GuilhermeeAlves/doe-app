@@ -4,47 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.doe.DonationRegisterActivity"
-    android:padding="40dp"
+    tools:context="com.doe.ui.DonationRegisterActivity"
+    android:padding="30dp"
     android:orientation="vertical">
 
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo"/>
+        android:text="@string/tipo"/>
+
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/sp_item_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_item_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="Descrição"
+        android:hint="@string/descri_o"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Qualidade"
+        android:text="@string/qualidade"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/sp_item_quality"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_item_quantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Quantidade"
+        android:hint="@string/quantidade"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/bt_item_new"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Novo item"
+        android:text="@string/novo_item"
         android:textColor="@color/colorPrimeryText"
         android:layout_marginTop="20dp"/>
     
