@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 import com.doe.R;
 import com.doe.ui.auth.LoginActivity;
-import com.doe.ui.fragments.PublicationsFragment;
+import com.doe.ui.fragments.PublicationListsFragment;
 import com.doe.ui.fragments.OrganizationsFragment;
 import com.doe.ui.fragments.SettingsFragment;
 
@@ -113,7 +113,7 @@ public class MenuActivity extends AppCompatActivity {
                 title = "Instituições";
                 break;
             case 1:
-                fragment = new PublicationsFragment();
+                fragment = new PublicationListsFragment();
                 title = "Publicações";
                 break;
             case 2:

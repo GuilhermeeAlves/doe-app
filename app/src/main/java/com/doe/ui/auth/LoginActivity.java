@@ -38,17 +38,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
+//        if(userIsAuthenticated()) {
+//            startMenuActivity();
+//        }
+
         btnLogin.setOnClickListener(this);
         btnCadastrar.setOnClickListener(this);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        if(userIsAuthenticated()) {
-            startMenuActivity();
-        }
     }
 
     public void login(String email, String password) {
