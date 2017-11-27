@@ -94,9 +94,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
 
-        if (this.userType.equals("Colaborador")) {
+        if (this.userType.equals("Comum")) {
             saveUser();
-        } else if (this.userType.equals("Organização")) {
+        } else if (this.userType.equals("Instituição")) {
             saveOrganization();
         }
 
