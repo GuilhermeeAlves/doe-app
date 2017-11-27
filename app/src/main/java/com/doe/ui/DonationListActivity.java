@@ -1,4 +1,4 @@
-package com.doe;
+package com.doe.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.doe.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,7 @@ import butterknife.ButterKnife;
 
 public class DonationListActivity extends AppCompatActivity {
     List<String> donations;
-    @BindView(R.id.lv_donations)ListView lvDonations;
+    @BindView(R.id.lv_donations) ListView lvDonations;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class DonationListActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
         //popular a listview
         donations = new ArrayList<>();

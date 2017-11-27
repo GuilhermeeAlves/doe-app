@@ -6,15 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context="com.doe.DonationEditActivity">
+    tools:context="com.doe.ui.DonationEditActivity">
+
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tipo"/>
+
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/sp_item_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_item_description"
         android:layout_width="match_parent"
@@ -22,15 +25,18 @@
         android:inputType="text"
         android:hint="Descrição"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Qualidade"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/sp_item_quality"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_item_quantity"
         android:layout_width="match_parent"
@@ -38,6 +44,7 @@
         android:inputType="number"
         android:hint="Quantidade"
         android:layout_marginTop="10dp"/>
+
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/bt_item_save"
         android:layout_width="match_parent"
@@ -46,6 +53,7 @@
         android:text="Salvar"
         android:textColor="@color/colorPrimeryText"
         android:layout_marginTop="20dp"/>
+
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/bt_item_delete"
         android:layout_width="match_parent"

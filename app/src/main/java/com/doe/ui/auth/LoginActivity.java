@@ -1,4 +1,4 @@
-package com.doe;
+package com.doe.ui.auth;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,13 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.doe.ui.DonationListActivity;
+import com.doe.R;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.et_email) EditText etEmail;
     @BindView(R.id.et_password) EditText etPassword;
-    @BindView(R.id.bt_login)Button mButtonLogin;
+    @BindView(R.id.bt_login) Button btnLogin;
+    @BindView(R.id.bt_cadastrar) Button btnCadastrar;
+
     private SharedPreferences spLogin;
     private SharedPreferences.Editor editor;
     public static final String NOME_ARQUIVO = "login_file";
@@ -22,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.spLogin = getApplicationContext().getSharedPreferences(this.NOME_ARQUIVO,MODE_APPEND);
+        this.spLogin = getApplicationContext().getSharedPreferences(this.NOME_ARQUIVO, MODE_APPEND);
         this.editor = this.spLogin.edit();
         if(userIsAuthenticated()){
             startListActivity();
@@ -30,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        mButtonLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startListActivity();
@@ -38,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void login(String email){
+    public void login(String email) {
         editor.putString("login", email);
         editor.commit();
     }
@@ -52,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
         return authenticated;
     }
 
-    private void startListActivity(){
+    private void startListActivity() {
         Intent nextIntent = new Intent(LoginActivity.this, DonationListActivity.class);
         startActivity(nextIntent);
     }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_organizations"
+        android:icon="@drawable/ic_people_black_36dp"
+        android:title="@string/institui_es" />
+    <item
+        android:id="@+id/action_lists"
+        android:icon="@drawable/ic_list_black_36dp"
+        android:title="@string/listas" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings_black_36dp"
+        android:title="@string/configura_es" />
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_exit_to_app_black_36dp"
+        android:title="@string/logout" />
+</menu>

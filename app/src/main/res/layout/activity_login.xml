@@ -4,25 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.doe.LoginActivity"
-    android:padding="40dp"
+    tools:context="com.doe.ui.auth.LoginActivity"
+    android:padding="20dp"
     android:orientation="vertical">
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/iv_logo"
-        android:layout_width="150dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_logo"/>
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/logo"
+        android:src="@mipmap/ic_logo" />
 
+    <!-- Input Email -->
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_perm_identity"
         android:drawablePadding="10dp"
-        android:hint="e-mail"
+        android:hint="E-mail"
         android:layout_marginTop="10dp"/>
+
+    <!--Input Password -->
     <android.support.v7.widget.AppCompatEditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
@@ -31,13 +36,25 @@
         android:drawablePadding="10dp"
         android:hint="******"
         android:layout_marginTop="10dp"/>
+
+    <!-- Login Button -->
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/bt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:textColor="@color/colorPrimeryText"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:layout_marginTop="20dp"/>
+
+    <!-- Login Button -->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimeryText"
+        android:text="@string/cadastrar"
+        android:layout_marginTop="10dp"/>
 
 </android.support.v7.widget.LinearLayoutCompat>
