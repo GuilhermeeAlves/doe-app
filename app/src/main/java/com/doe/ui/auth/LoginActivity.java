@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.doe.ui.DonationListActivity;
+import com.doe.ui.MenuActivity;
+import com.doe.ui.donation.DonationListActivity;
 import com.doe.R;
 
 import butterknife.BindView;
@@ -27,18 +28,21 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.spLogin = getApplicationContext().getSharedPreferences(this.NOME_ARQUIVO, MODE_APPEND);
+        this.spLogin = getApplicationContext().getSharedPreferences(NOME_ARQUIVO, MODE_APPEND);
         this.editor = this.spLogin.edit();
-        if(userIsAuthenticated()){
-            startListActivity();
+        this.editor.apply();
+
+        if(userIsAuthenticated()) {
+            startMenuActivity();
         }
+
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startListActivity();
+                startMenuActivity();
             }
         });
     }
@@ -51,14 +55,16 @@ public class LoginActivity extends AppCompatActivity {
     private boolean userIsAuthenticated() {
         boolean authenticated = false;
         String login = this.spLogin.getString("login", null);
+
         if(login != null) {
             authenticated = true;
         }
+
         return authenticated;
     }
 
-    private void startListActivity() {
-        Intent nextIntent = new Intent(LoginActivity.this, DonationListActivity.class);
+    private void startMenuActivity() {
+        Intent nextIntent = new Intent(LoginActivity.this, MenuActivity.class);
         startActivity(nextIntent);
     }
 }

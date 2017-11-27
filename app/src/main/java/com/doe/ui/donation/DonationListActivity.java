@@ -1,4 +1,4 @@
-package com.doe.ui;
+package com.doe.ui.donation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class DonationListActivity extends AppCompatActivity {
+
     List<String> donations;
     @BindView(R.id.lv_donations) ListView lvDonations;
 
