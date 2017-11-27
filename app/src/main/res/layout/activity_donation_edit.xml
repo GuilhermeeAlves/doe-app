@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context="com.doe.ui.donation.DonationEditActivity">
+    tools:context="com.doe.ui.fragments.donation.DonationEditActivity">
 
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.doe.ui.donation.DonationRegisterActivity"
+    tools:context="com.doe.ui.fragments.donation.DonationRegisterActivity"
     android:padding="30dp"
     android:orientation="vertical">
 

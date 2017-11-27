@@ -3,6 +3,8 @@ package com.doe.ui;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,7 +22,7 @@ import android.widget.TextView;
 
 import com.doe.R;
 import com.doe.ui.auth.LoginActivity;
-import com.doe.ui.fragments.ListsFragment;
+import com.doe.ui.fragments.PublicationsFragment;
 import com.doe.ui.fragments.OrganizationsFragment;
 import com.doe.ui.fragments.SettingsFragment;
 
@@ -31,6 +33,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private ActionBarDrawerToggle mDrawerToggle;
     private TextView userName;
+    private SharedPreferences spLogin;
 
     @BindView(R.id.drawer_layout) DrawerLayout mDrawerLayout;
     @BindView(R.id.navigation) NavigationView mNavigationView;
@@ -58,10 +61,13 @@ public class MenuActivity extends AppCompatActivity {
             setupNavigationView(mNavigationView);
         }
 
+        this.spLogin = PreferenceManager.getDefaultSharedPreferences(this);
+
         View headerView = null;
         if (mNavigationView != null) {
             headerView = mNavigationView.getHeaderView(0);
             this.userName = headerView.findViewById(R.id.txtName);
+            this.userName.setText(spLogin.getString("loginEmail", null));
         }
 
         selectItem(0);
@@ -107,8 +113,8 @@ public class MenuActivity extends AppCompatActivity {
                 title = "Instituições";
                 break;
             case 1:
-                fragment = new ListsFragment();
-                title = "";
+                fragment = new PublicationsFragment();
+                title = "Publicações";
                 break;
             case 2:
                 fragment = new SettingsFragment();

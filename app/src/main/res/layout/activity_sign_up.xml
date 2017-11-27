@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tipo_de_usu_rio" />
+
         <!-- Radio User Type -->
         <RadioGroup
             android:id="@+id/rg_user_type"
@@ -86,10 +87,10 @@
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:id="@+id/rb_ong"
-                android:layout_width="match_parent"
+                android:layout_width="146dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="140dp"
-                android:text="@string/organiza_o" />
+                android:layout_marginLeft="50dp"
+                android:text="@string/institui_o" />
         </RadioGroup>
 
         <LinearLayout
@@ -173,10 +174,11 @@
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
+            android:background="@color/colorSecondary"
             android:text="@string/voltar_ao_login"
             android:textStyle="bold"
             android:textColor="@color/colorPrimary"

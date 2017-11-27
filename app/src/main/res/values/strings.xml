@@ -27,4 +27,7 @@
     <string name="username">Username</string>
     <string name="drawer_open">Abrir navegação</string>
     <string name="drawer_close">Fechar navegação</string>
+    <string name="senha_login">Senha</string>
+    <string name="publica_es">Publicações</string>
+    <string name="institui_o">Instituição</string>
 </resources>
