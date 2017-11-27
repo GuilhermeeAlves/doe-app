@@ -75,7 +75,7 @@ public class MenuActivity extends AppCompatActivity {
                     case R.id.action_organizations:
                         selectItem(0);
                         return true;
-                    case R.id.action_list:
+                    case R.id.action_lists:
                         selectItem(1);
                         return true;
                     case R.id.action_settings:
@@ -104,11 +104,11 @@ public class MenuActivity extends AppCompatActivity {
         switch (position) {
             case 0:
                 fragment = new OrganizationsFragment();
-                title = "Mapa";
+                title = "Instituições";
                 break;
             case 1:
                 fragment = new ListsFragment();
-                title = "Localizações";
+                title = "";
                 break;
             case 2:
                 fragment = new SettingsFragment();
