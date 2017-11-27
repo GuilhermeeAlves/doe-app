@@ -1,4 +1,4 @@
-package com.doe.ui;
+package com.doe.ui.donation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
