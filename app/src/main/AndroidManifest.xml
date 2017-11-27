@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DonationRegisterActivity" />
-        <activity android:name=".DonationListActivity" />
-        <activity android:name=".DonationEditActivity"></activity>
+        <activity android:name=".ui.DonationRegisterActivity" />
+        <activity android:name=".ui.DonationListActivity" />
+        <activity android:name=".ui.DonationEditActivity" />
+        <activity android:name=".ui.auth.SignUpActivity" />
+        <activity android:name=".ui.MenuActivity"></activity>
     </application>
 
 </manifest>
