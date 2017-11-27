@@ -18,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.donation.DonationRegisterActivity" />
-        <activity android:name=".ui.donation.DonationListActivity" />
-        <activity android:name=".ui.donation.DonationEditActivity" />
+        <activity android:name=".ui.fragments.donation.DonationRegisterActivity" />
+        <activity android:name=".ui.fragments.donation.DonationListActivity" />
+        <activity android:name=".ui.fragments.donation.DonationEditActivity" />
         <activity android:name=".ui.auth.SignUpActivity" />
         <activity android:name=".ui.MenuActivity"></activity>
     </application>

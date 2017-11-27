@@ -84,6 +84,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             onSignupFailed();
             return;
         }
+
         signupButton.setEnabled(false);
         onSignupSuccess();
     }
@@ -217,7 +218,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void updateUi(String userType) {
-        if (userType.equals("Colaborador")) {
+        if (userType.equals("Comum")) {
             containerContributor.setVisibility(View.VISIBLE);
             containerOng.setVisibility(View.GONE);
         } else if (userType.equals("Organização")) {

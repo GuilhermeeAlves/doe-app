@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,25 +18,34 @@
         android:contentDescription="@string/logo"
         android:src="@mipmap/ic_logo" />
 
-    <!-- Input Email -->
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/et_email"
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_perm_identity"
-        android:drawablePadding="10dp"
-        android:hint="E-mail"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/e_mail"
+            android:drawableLeft="@drawable/ic_perm_identity"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
 
-    <!--Input Password -->
-    <android.support.v7.widget.AppCompatEditText
-        android:id="@+id/et_password"
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_lock"
-        android:drawablePadding="10dp"
-        android:hint="******"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/senha_login"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
 
     <!-- Login Button -->
     <android.support.v7.widget.AppCompatButton
